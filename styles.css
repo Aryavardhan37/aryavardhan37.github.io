@@ -4,35 +4,41 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
-/* Set a background color for the body */
+/* Set common styles for body and navbar */
+body, .navbar {
+    font-family: Arial, sans-serif;
+}
+
 body {
     background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 /* Style the navigation bar */
 .navbar {
-    background-color: #007BFF;
+    background-color: transparent;
     color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    padding: 10px 0; /* Adjust the padding to make the navbar smaller */
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Make the font size a bit smaller */
     font-weight: bold;
+    margin-left: 20px; /* Add some margin to the left for better alignment */
 }
 
-/* Style the hero section */
-.jumbotron {
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+.navbar-nav {
+    margin-right: 20px; /* Add margin to the right for better alignment */
 }
 
-.jumbotron h1 {
-    font-size: 3rem;
-    font-weight: bold;
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Adjust the margin between nav items */
 }
 
 .btn-primary {
@@ -41,51 +47,25 @@ body {
     font-weight: bold;
 }
 
-/* Style the feature section */
-#features {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-#features h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#features h3 {
-    font-size: 1.5rem;
-}
-
-/* Style the about section */
-#about {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-}
-
-#about h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#about p {
-    text-align: center;
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Style the contact section */
+/* Style sections */
+#features,
+#about,
 #contact {
     background-color: #fff;
     padding: 40px 0;
+    text-align: center; /* Center the text in sections */
 }
 
-#contact h2 {
+h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-#contact p {
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
     text-align: center;
     font-size: 1.1rem;
     max-width: 600px;
@@ -101,25 +81,43 @@ footer {
     font-size: 0.9rem;
 }
 
- /* Add your custom styles here */
- body {
-    background-color: #f8f9fa;
-}
-.navbar {
-    background-color: #007BFF;
-}
+/* Style the hero section */
 .jumbotron {
-    background-image: url('background-image.jpg');
+    background-image: url('images/15914224201.png');
     background-size: cover;
+    background-position: center top;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a black tint with 50% opacity */
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a black tint with 50% opacity */
+    z-index: -1;
+}
+
+.btn-primary {
+    font-weight: bold;
+    margin-top: 20px; /* Add margin to separate from the text */
+}
+
 .jumbotron h1 {
     font-size: 3rem;
+    font-weight: bold;
 }
-.btn-primary {
-    background-color: #007BFF;
-    border-color: #007BFF;
+
+.jumbotron p {
+    font-size: 1.1rem;
 }
-/* Add more custom styles as needed for your specific design. */
+
