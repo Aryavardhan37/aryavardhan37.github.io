@@ -9,11 +9,15 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+        <div class="loading-text">TextPix Connect</div>
+    </div>
     <div class="hero">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/mu.png" alt="Your Startup Logo" width="200" height="200">
+                    <img src="images/mu.png" alt="Logo" width="200" height="200">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +39,7 @@
         </nav>
         <div class="jumbotron">
             <div class="container">
-                <h1>Welcome to Your Startup</h1>
+                <h1>Welcome to TextPix Connect</h1>
                 <p>We offer amazing products and services to make your life easier.</p>
                 <a class="btn btn-primary btn-lg" href="#contact" role="button">Get Started</a>
             </div>
@@ -46,16 +50,25 @@
             <h2>Our Features</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Feature 1</h3>
-                    <p>Description of feature 1.</p>
+                    <div class="feature">
+                        <img src="/images/Website.gif" alt="Your GIF" class="responsive-gif">
+                        <h3>Word Parsing System</h3>
+                        <p>Extract text and images from PDF or DOC files.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Feature 2</h3>
-                    <p>Description of feature 2.</p>
+                    <div class="feature">
+                        <img src="doc-to-db.png" alt="Document to Database">
+                        <h3>Document to Database</h3>
+                        <p>Directly extract text from PDF and store data in a database.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Feature 3</h3>
-                    <p>Description of feature 3.</p>
+                    <div class="feature">
+                        <img src="template-management.png" alt="Template Management System">
+                        <h3>Template Management System</h3>
+                        <p>Create, modify, and delete templates. Populate templates with data from the database.</p>
+                    </div>
                 </div>
             </div>
         </div>

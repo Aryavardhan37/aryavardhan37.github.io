@@ -24,3 +24,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Add an event listener to hide the preloader when the content is loaded.
+// Add an event listener to hide the preloader after a delay (e.g., 6 seconds).
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        document.querySelector('.preloader').classList.add('hidden');
+    }, 3000); // 6000 milliseconds (6 seconds)
+});
