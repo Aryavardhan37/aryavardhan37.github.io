@@ -39,11 +39,17 @@
         </nav>
         <div class="jumbotron">
             <div class="container">
-                <h1>Welcome to TextPix Connect</h1>
-                <p>We offer amazing products and services to make your life easier.</p>
-                <a class="btn btn-primary btn-lg" href="#contact" role="button">Get Started</a>
+                <div id="animation-text">
+                    <h1>Welcome to TextPix Connect</h1>
+                    <div id="feature-description">
+                        <p>TextPix provides you</p>
+                        <p id="feature-text">Word Parsing System</p>
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
+        
     </div>
     <section id="features">
         <div class="container">
@@ -58,14 +64,14 @@
                 </div>
                 <div class="col-md-4">
                     <div class="feature">
-                        <img src="doc-to-db.png" alt="Document to Database">
+                        <img src="/images/doc_to_database.gif" alt="Document to Database">
                         <h3>Document to Database</h3>
                         <p>Directly extract text from PDF and store data in a database.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature">
-                        <img src="template-management.png" alt="Template Management System">
+                        <img src="/images/Template.gif" alt="Template Management System">
                         <h3>Template Management System</h3>
                         <p>Create, modify, and delete templates. Populate templates with data from the database.</p>
                     </div>
@@ -76,18 +82,53 @@
 
     <section id="about">
         <div class="container">
-            <h2>About Us</h2>
-            <p>We are a passionate team dedicated to creating innovative solutions for your needs. Learn more about our story and mission.</p>
+            <h2>About the Developer</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="developer-photo-frame">
+                        <img src="images/pic.jpg" alt="Your Photo" class="developer-photo">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>Hello, I'm Aryavardhan Sharma, a passionate developer with a background in web and software development. I'm dedicated to creating innovative solutions to solve real-world problems.</p>
+                    <p>With a [Your Degree] from [Your University] and [X] years of experience in the industry, I've had the privilege of working on various projects that have honed my skills and expertise.</p>
+                    <p>I specialize in [Your Specialization] and I'm proficient in languages like [Your Languages], frameworks like [Your Frameworks], and tools such as [Your Tools]. My approach to development is driven by a strong commitment to quality and efficiency.</p>
+                    <p>Feel free to explore my portfolio to see some of my featured projects. If you have a project in mind or just want to connect, please don't hesitate to reach out. I'm always open to new opportunities and collaborations.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class "container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to get in touch, feel free to contact us.</p>
-            <!-- Add a contact form here if needed -->
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Want to have a Collaboration?</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-gif">
+                    <img src="/images/Digital Conversation.gif" alt="Your GIF">
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <footer class="text-center py-3">
         <p>&copy; 2023 Your Startup Name</p>
@@ -96,5 +137,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

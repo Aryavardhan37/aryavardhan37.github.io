@@ -32,3 +32,49 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.preloader').classList.add('hidden');
     }, 3000); // 6000 milliseconds (6 seconds)
 });
+
+
+// Array of feature text
+const featureTexts = ["Word Parsing System", "Document To Database", "Template Management System"];
+
+let currentIndex = 0;
+let textIndex = 0;
+let isDeleting = false;
+let delay = 2000; // Time in milliseconds before starting the next word
+
+document.addEventListener('DOMContentLoaded', function () {
+    const featureTexts = ["Word Parsing System", "Document to Database", "Template Management System"];
+    let textIndex = 0;
+    const featureTextElement = document.getElementById("feature-text");
+    let text = "";
+    let isDeleting = false;
+    let typingSpeed = 100; // Typing speed in milliseconds
+
+    function typeText() {
+        const currentText = featureTexts[textIndex];
+        if (isDeleting) {
+            text = currentText.substring(0, text.length - 1);
+        } else {
+            text = currentText.substring(0, text.length + 1);
+        }
+        featureTextElement.innerText = text;
+
+        let typingDelay = isDeleting ? typingSpeed / 2 : typingSpeed * 2;
+
+        if (!isDeleting && text === currentText) {
+            typingDelay = 1500; // Delay after completing typing
+            isDeleting = true;
+        } else if (isDeleting && text === "") {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % featureTexts.length;
+            typingDelay = 500; // Delay before typing the next word
+        }
+
+        setTimeout(typeText, typingDelay);
+    }
+
+    setTimeout(typeText, 500); // Initial delay before typing starts
+});
+
+
+

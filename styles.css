@@ -310,3 +310,251 @@ body {
     display: block;
     margin: 0 auto;
 }
+/* Your existing CSS code */
+
+/* Style the navigation bar */
+/* Style the navigation bar */
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    min-height: 40px; /* Set the minimum height for the navbar */
+    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+.navbar-brand {
+    font-size: 1.2rem; /* Decrease the font size for the logo */
+}
+
+/* Style the hero section */
+.jumbotron {
+    background-image: url('images/15914224201.png');
+    background-size: cover;
+    background-position: center top;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a black tint with 50% opacity */
+    color: #fff;
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust the margin */
+}
+
+#feature-description {
+    text-align: left; /* Align feature description to the left */
+    margin-top: 20px;
+    font-size: 1rem; /* Add margin between the text and feature description */
+}
+
+#feature-text {
+    font-size: 2.5rem; /* Increase the font size */
+    font-weight: bold;
+    margin-top: 10px; /* Add margin between feature text and description */
+}
+/* Style the feature description and align it to the left */
+#feature-description {
+    text-align: left; /* Align to the left */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-top: 10px; /* Add margin to separate it from the heading */
+}
+
+/* Style the feature text */
+#feature-text {
+    display: inline; /* Display inline to make backspacing work properly */
+    font-weight: bold; /* Add desired styles */
+    margin-left: 10px; /* Add some margin for spacing */
+}
+
+/* Other CSS styles... */
+#about {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.developer-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    font-weight: bold;
+}
+.developer-photo-frame {
+    width: 300px; /* Set the desired width of the circular frame */
+    height: 300px; /* Set the desired height of the circular frame */
+    border-radius: 50%; /* Create a circular shape */
+    overflow: hidden; /* Hide the overflow outside the circular frame */
+    margin: 0 auto; /* Center the circular frame */
+}
+.developer-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.developer-photo-frame {
+    width: 200px; /* Set the desired width of the circular frame */
+    height: 200px; /* Set the desired height of the circular frame */
+    border-radius: 50%; /* Create a circular shape */
+    overflow: hidden; /* Hide the overflow outside the circular frame */
+    margin: 0 auto; /* Center the circular frame */
+}
+
+.developer-photo {
+    width: 100%; /* Make the image take up the full width of the circular frame */
+    height: 100%; /* Make the image take up the full height of the circular frame */
+    object-fit: cover; /* Crop the image to cover the circular frame */
+    object-position: center center; /* Center the image horizontally and vertically */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+/* Style the contact section */
+#contact {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    #contact form {
+        max-width: 100%;
+    }
+    .form-group {
+        text-align: center;
+    }
+    .form-group label {
+        text-align: center;
+    }
+}
+/* Add this CSS to style the contact section */
+#contact {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#contact .contact-form {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+#contact .contact-gif {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Your existing form styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Your existing form-group styling */
+
+#contact .contact-gif img {
+    max-width: 100%;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    #contact .container {
+        flex-direction: column;
+    }
+
+    #contact .contact-form {
+        width: 100%;
+    }
+
+    #contact .contact-gif {
+        width: 100%;
+    }
+}
